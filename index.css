@@ -13,9 +13,15 @@ html {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  line-height: 30px;
   font-size: 16rem;
   font-family: var(--fuente);
   color: var(--white);
+}
+
+*::selection{
+	background-color: #240046;
+	color: white;
 }
 
 body {
@@ -123,7 +129,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  min-height: calc(100vh - 65px);
+  min-height: calc(100vh - 70px);
 }
 
 main .contain-img {
@@ -184,6 +190,7 @@ main .contain-aside div {
   color: var(--red);
   text-align: center;
   background-color: var(--black);
+  user-select: none;
   transition: background 2s, color 1s;
 }
 
@@ -276,6 +283,10 @@ main h1 {
   width: 90%;
 }
 
+.section-miembros .texto {
+  width: 100%;
+}
+
 .section-miembros .contain-miembros {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -356,6 +367,7 @@ main h1 {
 }
 
 #video {
+  border-radius: 5px;
   margin: 15px 0;
   height: 350px;
   width: 90%;
@@ -364,16 +376,17 @@ main h1 {
 /* FOOTER: */
 
 footer {
-  height: 15px;
+  height: 20px;
   overflow: hidden;
 }
 
 footer a {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   margin-left: 10px;
   text-decoration: none;
   vertical-align: text-top;
   font-size: 10rem;
+  line-height: 0;
 }
 
 footer a i {
