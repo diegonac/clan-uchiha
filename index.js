@@ -28,7 +28,7 @@ itachi.addEventListener("click", () => {
   modalMiembros.setAttribute("style", "background: #0b090a; z-index: 10");
   modalMiembros.innerHTML = `<p class='texto'>
   <button class="close-modal-miembros"><i class="fa-solid fa-xmark"></i></button> <br>
-  <img src="https://static.wikia.nocookie.net/doblaje/images/4/44/Itachi_Uchiha_NS.png/revision/latest?cb=20130809162600&path-prefix=es" />
+  <img src="https://i.imgur.com/uUu2VO8.png" />
   Itachi Uchiha hijo de Fugaku Uchiha y Mikoto Uchiha, hermano mayor de Sasuke Uchiha. Era conocido por ser el miembro más talentoso de su clan y un prodigio para aquellos que lo conocían. Desde su nacimiento, demostró habilidades sobresalientes y a los 8 años despertó el Sharingan. Se graduó como el mejor de su promoción y a los 13 años fue nombrado capitán de las Unidades ANBU. Era el hijo favorito de Fugaku Uchiha y era conocido y admirado en toda Konoha. Itachi poseía el Mangekyou Sharingan, lo que le permitía usar el Amaterasu y el Tsukuyomi, un genjutsu extremadamente poderoso que podía atrapar y controlar el espacio-tiempo de sus rivales. También tenía un Susano'o que le permitía crear una figura de samurái alrededor de su cuerpo, con el Escudo de Yata para repeler ataques y la Espada de Totsuka, capaz de sellar a sus rivales en un genjutsu eterno. Zetsu lo consideraba "invencible" debido a sus impresionantes habilidades. </p>`;
 
   const button = document.querySelector(".close-modal-miembros");
@@ -42,7 +42,7 @@ sasuke.addEventListener("click", () => {
   modalMiembros.setAttribute("style", "background: #0b090a; z-index: 10");
   modalMiembros.innerHTML = `<p class='texto'>
   <button class="close-modal-miembros"><i class="fa-solid fa-xmark"></i></button> <br>
-  <img src="https://static.wikia.nocookie.net/doblaje/images/4/4f/Sasuke_Ugarte.png/revision/latest?cb=20190414044702&path-prefix=es" />
+  <img src="https://i.imgur.com/RaMWteI.png" />
   Sasuke Uchiha uno de los supervivientes del Clan Uchiha. Es hijo de Fugaku Uchiha y Mikoto Uchiha, hermano de Itachi Uchiha. Sasuke decidió desertar de Konohagakure en busca del poder necesario para vengar a su clan y asesinar a Itachi. <br> Después de descubrir la verdad de su hermano, fundó Taka, fue un aliado temporal de Akatsuki y se convirtió en un criminal internacional. Pero luego de hablar con Hashirama Senju decidió seguir el sueño de su hermano, colaborar con las Fuerzas Aliadas Shinobi y se colocó como meta realizar una revolución en el Mundo Shinobi. Posee el Rinnegan y el Eternal Mangekyou Sharingan, que es prácticamente un Sharingan perfecto. Gracias al Rinnegan tiene acceso a todos los Jutsus de los Seis Caminos, así como al Ninjutsu del Espacio-Tiempo. Su Susano’o, manifiesta uno de cuerpo completo. </p>`;
 
   const button = document.querySelector(".close-modal-miembros");
