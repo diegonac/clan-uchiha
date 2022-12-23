@@ -1,0 +1,394 @@
+:root {
+  --black: #0b090a;
+  --white: #fdfffc;
+  --red: #9d0208;
+  --fuente: "Roboto Mono", monospace;
+}
+
+html {
+  font-size: 6.25%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 16rem;
+  font-family: var(--fuente);
+  color: var(--white);
+}
+
+body {
+  height: 100vh;
+  min-height: 720px;
+  width: 100vw;
+  background-color: var(--black);
+}
+
+/* HEADER: */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+header .contain-logo {
+  height: 50px;
+  width: 50px;
+  background-image: url(https://i.imgur.com/55uRqkv.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header .contain-menu {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  height: 50px;
+}
+
+header .contain-menu i {
+  display: inline-block;
+  font-size: 20rem;
+  color: var(--white);
+}
+
+header .contain-menu i:active {
+  color: var(--red);
+}
+
+/* MENU: */
+
+#modal {
+  position: fixed;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  background: var(--black);
+  top: 0;
+  left: 5000px;
+  transition: left 0.75s;
+}
+
+#modal ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  max-height: 670px;
+  min-height: 620px;
+  width: 100%;
+}
+
+#modal ul * {
+  margin: 0 5px;
+  font-size: 20rem;
+  list-style: none;
+  letter-spacing: 5px;
+}
+
+#modal div {
+  position: absolute;
+  margin: 12px;
+}
+
+#modal ul li {
+  width: max-content;
+}
+
+#modal ul li a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+#modal div i,
+#modal ul li a i {
+  color: var(--white);
+  font-size: 20rem;
+}
+
+#modal div i:active,
+#modal ul li:active > a i,
+#modal ul li:active > a {
+  color: var(--red);
+}
+
+/* MAIN: */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: calc(100vh - 65px);
+}
+
+main .contain-img {
+  border-radius: 10px;
+  height: 48%;
+  min-height: 325px;
+  width: 90%;
+  background-image: url(https://i.imgur.com/MUEIjzg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.texto {
+  margin: 10px 0 20px 0;
+  width: 90%;
+  text-align: justify;
+  font-size: 14rem;
+}
+
+.titulo-h2 {
+  margin: 20px 0 5px 0;
+  font-size: 18rem;
+  font-weight: 800;
+}
+
+.titulo-h3 {
+  margin: 10px 0 5px 0;
+  font-size: 14rem;
+}
+
+main .contain-aside {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  justify-items: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px 0 20px 0;
+  height: 48%;
+  min-height: 325px;
+  width: 90%;
+  background-image: url(https://i.imgur.com/ls2Bvki.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+main .contain-aside div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 85%;
+  max-height: 150px;
+  width: 90%;
+  max-width: 200px;
+  color: var(--red);
+  text-align: center;
+  background-color: var(--black);
+  transition: background 2s, color 1s;
+}
+
+main .sh:hover {
+  background-image: url(https://i.imgur.com/vZ0bOlS.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+main .ms:hover {
+  background-image: url(https://i.imgur.com/lvdDwEx.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+main .mes:hover {
+  background-image: url(https://i.imgur.com/Y09qYHl.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+main .rin:hover {
+  background-image: url(https://i.imgur.com/y3AwxmX.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: transparent;
+}
+
+main h1 {
+  font-size: 22rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  color: var(--red);
+}
+
+.section-historia {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-historia figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: auto;
+  width: 100%;
+}
+
+.section-historia .contain-simbolo-uchiha {
+  height: 370px;
+}
+
+.section-historia .contain-guerra {
+  height: 225px;
+}
+
+.section-historia figure span {
+  font-size: 12rem;
+}
+
+.section-historia .simbolo-uchiha {
+  height: 350px;
+  width: 350px;
+}
+
+.section-historia .guerra {
+  height: 180px;
+  width: 90%;
+  max-width: 400px;
+}
+
+
+.section-miembros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 48%;
+  min-height: 910px;
+  width: 90%;
+}
+
+.section-miembros .contain-miembros {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 300px 300px 300px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 910px;
+  width: 100%;
+}
+
+.section-miembros div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 275px;
+  width: 100%;
+}
+
+.section-miembros .uchiha {
+  height: 250px;
+  width: 200px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.section-miembros .itachi {
+  background-image: url(https://static.wikia.nocookie.net/doblaje/images/4/44/Itachi_Uchiha_NS.png/revision/latest?cb=20130809162600&path-prefix=es);
+}
+
+.section-miembros .sasuke {
+  background-image: url(https://static.wikia.nocookie.net/doblaje/images/4/4f/Sasuke_Ugarte.png/revision/latest?cb=20190414044702&path-prefix=es);
+}
+
+.section-miembros .fugaku {
+  background-image: url(https://i.imgur.com/AGXLYQ1.png);
+}
+
+.section-miembros .madara {
+  background-image: url(https://i.imgur.com/eT62uaA.png);
+}
+
+.section-miembros .obito {
+  background-image: url(https://i.imgur.com/Ph8Mvd7.png);
+}
+
+.section-miembros .shisui {
+  background-image: url(https://i.imgur.com/TVEuirY.png);
+}
+
+.section-miembros .modal-miembros {
+  position: absolute;
+  height: auto;
+  width: 95%;
+  z-index: -1;
+  transition: background 0.5s;
+}
+
+.section-miembros .modal-miembros p img {
+  float: left;
+  height: 300px;
+  width: 150px;
+}
+
+.section-miembros .close-modal-miembros {
+  background: none;
+  border: none;
+  color: var(--white);
+}
+
+.section-masacre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#video {
+  margin: 15px 0;
+  height: 350px;
+  width: 90%;
+}
+
+/* FOOTER: */
+
+footer {
+  height: 15px;
+  overflow: hidden;
+}
+
+footer a {
+  padding-bottom: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  vertical-align: text-top;
+  font-size: 10rem;
+}
+
+footer a i {
+  margin: 0 3px;
+  font-size: 10rem;
+}
+
+footer a:active,
+footer a:active > i {
+  color: var(--red);
+}
+
+@media only screen and (min-width: 600px) {
+  main .contain-img {
+    background-size: contain;
+  }
+
+}
