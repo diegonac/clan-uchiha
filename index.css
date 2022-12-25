@@ -26,7 +26,6 @@ html {
 
 body {
   height: 100vh;
-  min-height: 720px;
   width: 100vw;
   background-color: var(--black);
 }
@@ -34,9 +33,14 @@ body {
 /* HEADER: */
 
 header {
+  position: fixed;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  height: 50px;
+  height: 55px;
+  width: 100%;
+  background: var(--black);
+  z-index: 100;
 }
 
 header .contain-logo {
@@ -52,7 +56,7 @@ header .contain-menu {
   display: flex;
   align-items: center;
   margin: 0 10px;
-  height: 50px;
+  height: 55px;
 }
 
 header .contain-menu i {
@@ -76,6 +80,7 @@ header .contain-menu i:active {
   background: var(--black);
   top: 0;
   left: 5000px;
+  z-index: 200;
   transition: left 0.75s;
 }
 
@@ -129,6 +134,7 @@ main {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  margin: 60px 0 0 0;
   min-height: calc(100vh - 70px);
 }
 
@@ -151,7 +157,7 @@ main .contain-img {
 }
 
 .titulo-h2 {
-  margin: 20px 0 5px 0;
+  margin: 60px 0 5px 0;
   font-size: 18rem;
   font-weight: 800;
 }
@@ -245,7 +251,6 @@ main h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  overflow: auto;
   width: 100%;
 }
 
@@ -343,8 +348,11 @@ main h1 {
   position: absolute;
   height: auto;
   width: 95%;
+  opacity: 0;
   z-index: -1;
-  transition: background 0.5s;
+  border-radius: 5px;
+  /* background: #370617; */
+  transition: background 0.5s, opacity 0.5s;
 }
 
 .section-miembros .modal-miembros p img {
@@ -354,9 +362,15 @@ main h1 {
 }
 
 .section-miembros .close-modal-miembros {
-  background: none;
+  display: block;
   border: none;
+  background: none;
   color: var(--white);
+  line-height: 16px;
+}
+
+.section-miembros .modal-miembros .texto {
+  padding: 0 10px;
 }
 
 .section-masacre {
