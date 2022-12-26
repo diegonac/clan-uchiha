@@ -487,6 +487,14 @@ footer a:active > i {
     width: 72%;
   }
 
+  main .contain-aside {
+    min-height: 450px;
+  }
+
+  #video { 
+    height: 500px;
+  }
+
   footer {
     background-color: var(--black);
   }
