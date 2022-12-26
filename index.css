@@ -481,6 +481,8 @@ footer a:active > i {
   main .contain-img {
     background-image: url(https://i.imgur.com/gIm1TvO.jpg);
     background-size: cover;
+    background-position: center;
+    min-width: 90%;
   }
 
   .section-miembros .modal-miembros {
