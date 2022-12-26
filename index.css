@@ -26,11 +26,15 @@ html {
 
 body {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   background-color: var(--black);
 }
 
 /* HEADER: */
+
+header #header-desktop {
+  display: none;
+}
 
 header {
   position: fixed;
@@ -139,11 +143,12 @@ main {
 }
 
 main .contain-img {
+  margin: 20px 0 5px 0;
   border-radius: 10px;
   height: 48%;
-  min-height: 325px;
+  min-height: 450px;
   width: 90%;
-  background-image: url(https://i.imgur.com/MUEIjzg.png);
+  background-image: url(https://i.imgur.com/9zyoD61.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -165,6 +170,10 @@ main .contain-img {
 .titulo-h3 {
   margin: 10px 0 5px 0;
   font-size: 14rem;
+}
+
+main #ojos-clan {
+  margin: 10px 0;
 }
 
 main .contain-aside {
@@ -414,8 +423,72 @@ footer a:active > i {
 }
 
 @media only screen and (min-width: 600px) {
-  main .contain-img {
+
+  body {
+    height: 100%;
+    background-image: url(https://i.pinimg.com/736x/1a/34/17/1a3417bd11cdf472648638486105d1e4.jpg);
+    background-position: center;
     background-size: contain;
+  }
+
+  #modal {
+    display: none;
+  }
+
+  header .contain-menu {
+    display: none;
+  }
+
+  header #header-desktop {
+    display: inline-block;
+    width: 80%;
+  }
+
+  header #header-desktop ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    list-style: none;
+  }
+
+  header #header-desktop ul a, #header-desktop ul a i {
+    text-decoration: none;
+  }
+
+  header #header-desktop ul li:active > a,
+  header #header-desktop ul li:active > a * {
+    color: var(--red);
+  }
+
+  header #header-desktop a * {
+    margin: 0 10px;
+  }
+
+  main {
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    width: 75%;
+    background: var(--black);
+  }
+
+  main h1 {
+    margin-top: 10px;
+  }
+
+  main .contain-img {
+    background-image: url(https://i.imgur.com/gIm1TvO.jpg);
+    background-size: cover;
+  }
+
+  .section-miembros .modal-miembros {
+    width: 72%;
+  }
+
+  footer {
+    background-color: var(--black);
   }
 
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html id="inicio" lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,16 +19,36 @@
     ></script>
   </head>
   <body>
-    <header id="header">
+    <header>
       <div class="contain-logo"></div>
       <div class="contain-menu"><i class="fa-sharp fa-solid fa-bars"></i></div>
+      <div id="header-desktop">
+        <ul>
+          <li class="menu-li">
+            <a href="#inicio"><i class="fa-sharp fa-solid fa-house"></i>Inicio</a>
+          </li>
+          <li class="menu-li">
+            <a href="#historia"><i class="fa-solid fa-book"></i>Historia</a>
+          </li>
+          <li class="menu-li">
+            <a href="#miembros"
+              ><i class="fa-solid fa-people-group"></i>Miembros</a
+            >
+          </li>
+          <li class="menu-li">
+            <a href="#masacre"
+              ><i class="fa-solid fa-skull-crossbones"></i>Masacre del clan</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
 
     <div id="modal">
       <div><i class="fa-solid fa-xmark"></i></div>
       <ul>
         <li class="menu-li">
-          <a href="#header"><i class="fa-sharp fa-solid fa-house"></i>Inicio</a>
+          <a href="#inicio"><i class="fa-sharp fa-solid fa-house"></i>Inicio</a>
         </li>
         <li class="menu-li">
           <a href="#historia"><i class="fa-solid fa-book"></i>Historia</a>
@@ -60,7 +80,7 @@
         de la Guerra (戦争の一族, Sensō no Ichizoku).
       </p>
 
-      <h2 class="titulo-h2">Ojos del clan</h2>
+      <h2 id="ojos-clan" class="titulo-h2">Ojos del clan</h2>
 
       <div class="contain-aside">
         <div class="sh">Sharingan</div>
