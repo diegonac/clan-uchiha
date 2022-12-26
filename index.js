@@ -1,4 +1,4 @@
-const main = document.querySelector("main");
+const body = document.querySelector("body");
 const bars = document.querySelector(".fa-bars");
 const modal = document.getElementById("modal");
 const closeMenu = document.querySelector(".fa-xmark");
@@ -16,19 +16,19 @@ const estilos = `background: #111111; z-index: 10; opacity: 1`;
 bars.addEventListener("click", () => {
   modal.setAttribute("style", "left: 0");
   setTimeout(() => {
-    main.setAttribute("style", "display:none");
+    body.setAttribute("style", "overflow: hidden");
   }, 750)
 });
 
 closeMenu.addEventListener("click", () => {
   modal.removeAttribute("style");
-  main.removeAttribute("style");
+  body.removeAttribute("style");
 });
 
 li.forEach((li) => {
   li.addEventListener("click", () => {
     modal.removeAttribute("style");
-    main.removeAttribute("style");
+    body.removeAttribute("style");
   });
 });
 
