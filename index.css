@@ -148,10 +148,10 @@ main .contain-img {
   height: 48%;
   min-height: 450px;
   width: 90%;
+  max-width: 375px;
   background-image: url(https://i.imgur.com/9zyoD61.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
 }
 
 .texto {
@@ -185,7 +185,7 @@ main .contain-aside {
   border-radius: 10px;
   margin: 10px 0 20px 0;
   height: 48%;
-  min-height: 325px;
+  min-height: 350px;
   width: 90%;
   background-image: url(https://i.imgur.com/ls2Bvki.jpg);
   background-size: cover;
@@ -422,7 +422,7 @@ footer a:active > i {
   color: var(--red);
 }
 
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (min-height: 460px) {
 
   body {
     height: 100%;
